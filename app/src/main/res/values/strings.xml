@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SmartTrafficDemo</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Title 1</string>
+    <string name="slide_2_title">Title 2</string>
+    <string name="slide_3_title">Title 3</string>
+    <string name="slide_4_title">Title 4</string>
+    <string name="slide_5_title">Title 5</string>
+
+    <!-- for test -->
+    <string name="play_again">PLAY AGAIN</string>
+
+</resources>
