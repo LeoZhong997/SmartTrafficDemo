@@ -1,10 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.szpt.zzq.smarttrafficdemo.LoginActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/login_background_color">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/login_image_width_height"
+            android:layout_height="@dimen/login_image_width_height"
+            android:layout_marginRight="@dimen/login_icon_other_margin"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/login_title"
+            android:textColor="@android:color/white"
+            android:text="@string/login_title"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/login_margin_left_right"
+        android:paddingRight="@dimen/login_margin_left_right"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/login_icon_width_height"
+                android:layout_height="@dimen/login_icon_width_height"
+                android:layout_marginRight="@dimen/login_icon_other_margin"
+                android:src="@drawable/target"/>
+
+            <Spinner
+                android:id="@+id/login_activity_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/white">
+            </Spinner>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="@dimen/login_icon_view_margin"
+            android:alpha="0.3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_icon_other_margin">
+            <ImageView
+                android:layout_width="@dimen/login_icon_width_height"
+                android:layout_height="@dimen/login_icon_width_height"
+                android:layout_marginRight="@dimen/login_icon_other_margin"
+                android:src="@drawable/ip"/>
+
+            <EditText
+                android:id="@+id/login_activity_ip_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/ip_address"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/login_edit_text"
+                android:textColorHint="@android:color/darker_gray"
+                style="?android:attr/textViewStyle">
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="@dimen/login_icon_view_margin"
+            android:alpha="0.3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_icon_other_margin">
+            <ImageView
+                android:layout_width="@dimen/login_icon_width_height"
+                android:layout_height="@dimen/login_icon_width_height"
+                android:layout_marginRight="@dimen/login_icon_other_margin"
+                android:src="@drawable/port"/>
+
+            <EditText
+                android:id="@+id/login_activity_port_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/port_number"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/login_edit_text"
+                android:textColorHint="@android:color/darker_gray"
+                style="?android:attr/textViewStyle">
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="@dimen/login_icon_view_margin"
+            android:alpha="0.3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/login_activity_connect_button"
+            android:layout_width="@dimen/login_connect_button_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/connect_button_background_selector"
+            android:textColor="@android:color/white"
+            android:text="@string/connect"/>
+    </LinearLayout>
+
+
+</LinearLayout>

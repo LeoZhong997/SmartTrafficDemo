@@ -10,6 +10,8 @@
     <color name="bg_screen3">#3395ff</color>
     <color name="bg_screen4">#c873f4</color>
     <color name="bg_screen5">#f59825</color>
+    <color name="bg_screen_color_start_login">#dc0ee7</color>
+    <color name="bg_screen_color_end_login">#09d2f1</color>
 
     <!-- dots inactive colors -->
     <color name="dot_dark_screen1">#d1395c</color>
@@ -24,6 +26,9 @@
     <color name="dot_light_screen3">#93c6fd</color>
     <color name="dot_light_screen4">#e4b5fc</color>
     <color name="dot_light_screen5">#fbc02d</color>
+
+    <color name="connect_button_inactive">#00000000</color>
+    <color name="connect_button_active">@color/bg_screen_color_start_login</color>
     
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>

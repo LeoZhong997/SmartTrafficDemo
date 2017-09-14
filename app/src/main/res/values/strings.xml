@@ -10,6 +10,16 @@
     <string name="slide_3_title">调整停车场费率</string>
     <string name="slide_4_title">查看站台信息</string>
     <string name="slide_5_title">检查道路状态</string>
+    
+    <string name="login_title">Smart Traffic</string>
+    <string name="server">Server</string>
+    <string name="ip_address">eg: 192.168.1.1</string>
+    <string name="port_number">eg: 8080</string>
+    <string name="connect">CONNECT</string>
+
+    <string-array name="request_array">
+        <item>@string/server</item>
+    </string-array>
 
     <!-- for test -->
     <string name="play_again">PLAY AGAIN</string>

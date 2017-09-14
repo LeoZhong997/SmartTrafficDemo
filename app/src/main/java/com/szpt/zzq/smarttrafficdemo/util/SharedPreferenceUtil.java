@@ -11,6 +11,8 @@ public class SharedPreferenceUtil {
     private static final String TAG = "SharedPreferenceUtil";
     private static final String PREF_NAME = "smart_traffic_demo_pref";
     private static final String IS_FIRST_RUN = "isFirstRun";
+    private static final String LAST_IP_ADDRESS = "last_ip_address";
+    private static final String LAST_PORT_ADDRESS = "last_port_address";
 
     private SharedPreferences mSharedPreferences;
     private Context mContext;
@@ -29,5 +31,23 @@ public class SharedPreferenceUtil {
 
     public boolean IsFirstRun() {
         return mSharedPreferences.getBoolean(IS_FIRST_RUN, true);
+    }
+
+    public void setLastIpAddress(String lastIpAddress) {
+        mEditor.putString(LAST_IP_ADDRESS, lastIpAddress)
+                .commit();
+    }
+
+    public String getLastIpAddress() {
+        return mSharedPreferences.getString(LAST_IP_ADDRESS, null);
+    }
+
+    public void setLastPortAddress(String lastPortAddress) {
+        mEditor.putString(LAST_PORT_ADDRESS, lastPortAddress)
+                .commit();
+    }
+
+    public String getLastPortAddress() {
+        return mSharedPreferences.getString(LAST_PORT_ADDRESS, null);
     }
 }

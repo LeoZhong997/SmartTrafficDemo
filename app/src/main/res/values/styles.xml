@@ -9,7 +9,7 @@
     </style>
 
     <!-- No action bar and title-->
-    <style name="WelcomeTheme" parent="AppTheme">
+    <style name="FullScreenTheme" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
