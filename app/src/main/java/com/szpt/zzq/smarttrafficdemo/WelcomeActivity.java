@@ -48,12 +48,12 @@ public class WelcomeActivity extends AppCompatActivity {
         }
 
         if (!mSharedPreferenceUtil.IsFirstRun()) {
-            //跳过引导界面
+            // 跳过引导界面
             Log.d(TAG, "WelcomeActivity has been visited");
             launchLoginActivity();
         }
 
-        // 状态栏透明
+        // 设置全屏，显示状态栏
         if (Build.VERSION.SDK_INT >= 16) {
             // SYSTEM_UI_FLAG_LAYOUT_STABLE：防止系统栏隐藏时内容区域大小发生变化
             // SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN：Activity全屏显示，但状态栏不会被隐藏覆盖，状态栏依然可见，Activity顶端布局部分会被状态遮住。
@@ -75,8 +75,10 @@ public class WelcomeActivity extends AppCompatActivity {
                 R.layout.welcome_part_5,
         };
 
+        // 设置状态栏背景为透明
         changeStatusBarColor();
 
+        // 初始化底部小圆点显示
         updateBottomDots(0);
 
         mWelcomeViewPagerAdapter = new WelcomeViewPagerAdapter();
@@ -183,6 +185,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private class WelcomeViewPagerAdapter extends PagerAdapter {
         private LayoutInflater mLayoutInflater;
 
+        // 实例化
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
             mLayoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);

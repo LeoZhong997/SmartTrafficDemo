@@ -5,11 +5,11 @@
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
 
-    <string name="slide_1_title">Title 1</string>
-    <string name="slide_2_title">Title 2</string>
-    <string name="slide_3_title">Title 3</string>
-    <string name="slide_4_title">Title 4</string>
-    <string name="slide_5_title">Title 5</string>
+    <string name="slide_1_title">获取小车信息</string>
+    <string name="slide_2_title">查询红绿灯配置</string>
+    <string name="slide_3_title">调整停车场费率</string>
+    <string name="slide_4_title">查看站台信息</string>
+    <string name="slide_5_title">检查道路状态</string>
 
     <!-- for test -->
     <string name="play_again">PLAY AGAIN</string>
