@@ -13,12 +13,18 @@
     
     <string name="login_title">Smart Traffic</string>
     <string name="server">Server</string>
+    <string name="other">Other</string>
     <string name="ip_address">eg: 192.168.1.1</string>
     <string name="port_number">eg: 8080</string>
     <string name="connect">CONNECT</string>
 
+    <string name="incorrect_ip">Please input a correct IP address.</string>
+    <string name="incorrect_port">Please input a correct Port number.</string>
+    <string name="connect_fail">Fail to connect.Please try it again.</string>
+
     <string-array name="request_array">
         <item>@string/server</item>
+        <item>@string/other</item>
     </string-array>
 
     <!-- for test -->

@@ -19,12 +19,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.szpt.zzq.smarttrafficdemo.util.ActivityManager;
 import com.szpt.zzq.smarttrafficdemo.util.SharedPreferenceUtil;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class WelcomeActivity extends ActivityManager {
     private static final String TAG = "WelcomeActivity";
-
-    private boolean mIsDebug = true;
 
     private ViewPager mViewPager;
     private Button mSkipButton;

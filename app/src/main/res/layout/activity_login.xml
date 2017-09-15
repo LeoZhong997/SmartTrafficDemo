@@ -49,6 +49,7 @@
                 android:id="@+id/login_activity_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@android:color/transparent"
                 android:backgroundTint="@android:color/white">
             </Spinner>
         </LinearLayout>
